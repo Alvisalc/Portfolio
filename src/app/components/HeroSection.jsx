@@ -38,9 +38,9 @@ const HeroSection = () => {
                         {/* Hire me */}
                         <Link
                         href="/contact"
-                        className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-300"
+                        className="px-5 inline-block py-2 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 text-white bg-[#5d5d5d] hover:bg-slate-800"
                         >
-                        Hire Me
+                        Let's talk 
                         </Link>
                         {/* Download CV */}
                         <Link
@@ -56,9 +56,9 @@ const HeroSection = () => {
                 </div>
 
                 <div className="col-span-4 place-self-center mt-4 lg:mt-0">
-                    <div className="rounded-full bg-[#5C5470] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
+                    <div className="rounded-full bg-[#ffffff] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
                         <Image
-                        src="/images/hero-image.png"
+                        src="/images/codeman.png"
                         alt="hero image"
                         className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                         width={300}
