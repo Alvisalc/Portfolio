@@ -9,12 +9,12 @@ const About = () => {
             <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
                 <h2 className="text-4xl font-bold mb-4">About Me</h2>
                     <p className="text-base lg:text-lg">
-                        I am a full stack web developer with a passion for creating
-                        interactive and responsive web applications. I have experience
-                        working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
-                        Sequelize, HTML, CSS, and Git. I am a quick learner and I am always
-                        looking to expand my knowledge and skill set. I am a team player and
-                        I am excited to work with others to create amazing applications.
+                    Hello there! 👋 I'm a dedicated front-end web developer driven by a passion for crafting
+                    engaging and user-friendly web experiences. Proficient in a wide range of skills
+                    including HTML, CSS, JavaScript, React, Node.js, Express, and Git.
+                    I'm also a creative thinker and a team player. 
+                    I relish the opportunity to collaborate with others, leveraging our collective skills to bring 
+                    amazing applications to life. Let's work together and create something extraordinary! 🚀
                     </p>
             </div>
         </div>
