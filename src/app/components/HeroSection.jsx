@@ -8,10 +8,10 @@ import TechStackIcons from './TechStackIcons';
 
 const HeroSection = () => {
 
-    const techStackIcons = ['/images/stack/html.png', '/images/stack/css.png', 
-    '/images/stack/javascript.png', '/images/stack/typescript.png', 
-    '/images/stack/react.png', '/images/stack/angular.png',
-    '/images/stack/tailwind.png', '/images/stack/sass.png'];
+    const techStackIcons = ['/images/html.png', '/images/css.png', 
+    '/images/javascript.png', '/images/typescript.png', 
+    '/images/react.png', '/images/angular.png',
+    '/images/tailwind.png', '/images/sass.png'];
 
     return(
         <section className="lg:py-16">

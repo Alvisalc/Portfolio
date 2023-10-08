@@ -4,28 +4,28 @@ import React, { useState, useRef } from "react";
 const projects = [
   {
     id: 1,
-    name: 'Car Rental',
-    description: 'A car rental website allowing users to search, compare, and reserve cars for personal or business use.',
+    name: 'Coming Soon',
+    description: 'A description for this website.',
     techStack: ['React', 'SCSS'],
-    previewImage: '/images/projects/1.png',
+    previewImage: '/images/1.png',
     githubLink: 'https://github.com/alvisalc',
     liveDemoLink: 'https://car-rental-demo.com',
   },
   {
     id: 2,
-    name: 'Car Rental',
-    description: 'A car rental website allowing users to search, compare, and reserve cars for personal or business use.',
-    techStack: ['React', 'SCSS'], 
-    previewImage: '/images/projects/2.png',
+    name: 'Coming Soon',
+    description: 'A description for this website.',
+    techStack: ['React', 'TailwindCSS'], 
+    previewImage: '/images/2.png',
     githubLink: 'https://github.com/alvisalc',
     liveDemoLink: 'https://car-rental-demo.com',
   },
   {
     id: 3,
-    name: 'Car Rental',
-    description: 'A car rental website allowing users to search, compare, and reserve cars for personal or business use.',
+    name: 'Coming Soon',
+    description: 'A description for this website.',
     techStack: ['React', 'SCSS'],
-    previewImage: '/images/projects/3.png',
+    previewImage: '/images/3.png',
     githubLink: 'https://github.com/alvisalc',
     liveDemoLink: 'https://car-rental-demo.com',
   }
@@ -39,7 +39,7 @@ const ProjectSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
             <div key={project.id} className="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105">
-              <image src={project.previewImage} alt={project.name} className="w-full h-40 object-cover object-center" />
+              <img src={project.previewImage} alt={project.name} className="w-full h-40 object-cover object-center" />
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-4">{project.name}</h3>
                 <p className="text-gray-700 mb-4">{project.description}</p>
