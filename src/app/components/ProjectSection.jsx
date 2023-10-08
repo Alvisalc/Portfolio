@@ -1,78 +1,70 @@
 "use client";
 import React, { useState, useRef } from "react";
-import ProjectCard from "./ProjectCard";
-import ProjectTag from "./ProjectTag";
-// import { motion, useInView } from "framer-motion";
 
-const projectsData = [
+const projects = [
   {
     id: 1,
-    title: "React Portfolio Website",
-    description: "Project 1 description",
-    image: "/images/projects/1.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    name: 'Car Rental',
+    description: 'A car rental website allowing users to search, compare, and reserve cars for personal or business use.',
+    techStack: ['React', 'SCSS'],
+    previewImage: '/images/projects/1.png',
+    githubLink: 'https://github.com/alvisalc',
+    liveDemoLink: 'https://car-rental-demo.com',
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
-    image: "/images/projects/2.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    name: 'Car Rental',
+    description: 'A car rental website allowing users to search, compare, and reserve cars for personal or business use.',
+    techStack: ['React', 'SCSS'], 
+    previewImage: '/images/projects/2.png',
+    githubLink: 'https://github.com/alvisalc',
+    liveDemoLink: 'https://car-rental-demo.com',
   },
   {
     id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
-    image: "/images/projects/3.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    name: 'Car Rental',
+    description: 'A car rental website allowing users to search, compare, and reserve cars for personal or business use.',
+    techStack: ['React', 'SCSS'],
+    previewImage: '/images/projects/3.png',
+    githubLink: 'https://github.com/alvisalc',
+    liveDemoLink: 'https://car-rental-demo.com',
   }
 ];
 
-const ProjectsSection = () => {
-  const [tag, setTag] = useState("All");
-  const ref = useRef(null);
-//   const isInView = useInView(ref, { once: true });
-
-  const handleTagChange = (newTag) => {
-    setTag(newTag);
-  };
-
-  const filteredProjects = projectsData.filter((project) =>
-    project.tag.includes(tag)
-  );
-
-  const cardVariants = {
-    initial: { y: 50, opacity: 0 },
-    animate: { y: 0, opacity: 1 },
-  };
-
+const ProjectSection = () => {
   return (
-    <section id="projects">
-      <h2 className="text-center text-4xl font-bold mt-4 mb-8 md:mb-12">
-        My Projects
-      </h2>
-      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
-        {filteredProjects.map((project, index) => (
-       
-            <ProjectCard
-              key={project.id}
-              title={project.title}
-              description={project.description}
-              imgUrl={project.image}
-              gitUrl={project.gitUrl}
-              previewUrl={project.previewUrl}
-            />
-         
-        ))}
-      </ul>
+    <section className="py-16" id="project">
+      <div className="container mx-aut px-8">
+        <h2 className="text-3xl font-semibold mb-8 text-center">My Projects</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project) => (
+            <div key={project.id} className="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105">
+              <img src={project.previewImage} alt={project.name} className="w-full h-40 object-cover object-center" />
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-4">{project.name}</h3>
+                <p className="text-gray-700 mb-4">{project.description}</p>
+                <div className="flex flex-wrap mb-4">
+                  {project.techStack.map((tech, index) => (
+                    <span key={index} className="bg-gray-200 text-gray-700 rounded-full px-3 py-1 text-sm mr-2 mb-2">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+                <div className="flex justify-between">
+                  <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
+                    GitHub
+                  </a>
+                  <a href={project.liveDemoLink} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
+                    Live Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </section>
   );
 };
 
-export default ProjectsSection;
+export default ProjectSection;

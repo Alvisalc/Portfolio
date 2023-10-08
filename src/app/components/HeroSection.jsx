@@ -3,14 +3,21 @@ import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import Link from "next/link";
+import TechStackIcons from './TechStackIcons';
+
 
 const HeroSection = () => {
+
+    const techStackIcons = ['/images/stack/html.png', '/images/stack/css.png', 
+    '/images/stack/javascript.png', '/images/stack/typescript.png', 
+    '/images/stack/react.png', '/images/stack/angular.png',
+    '/images/stack/tailwind.png', '/images/stack/sass.png'];
+
     return(
         <section className="lg:py-16">
-            <div className="grid grid-cols-1 sm:grid-cols-12">
-
+            <div className="grid grid-cols-1 sm:grid-cols-12 px-8">
                 <div className="col-span-8 place-self-center text-center sm:text-left justify-self-start">
-                    <h1 className="mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
+                    <h1 className="mb-4 text-4xl sm:text-4xl lg:text-7xl lg:leading-leading font-extrabold">
                         <span>
                         Hello, I&apos;m{" "}
                         </span>
@@ -28,23 +35,20 @@ const HeroSection = () => {
                             />
                     </h1>
 
-                    <p className="text-base sm:text-lg mb-6 lg:text-xl">
+                    <p className="text-base sm:text-lg mb-5 lg:text-base">
                         A passionate Front-end React Devloper based in Toronto, Canada.
                     </p>
+
+                    <div className="">
+                    <TechStackIcons stackIcons={techStackIcons} />
+                    </div>
                     
                     {/* link button starts */}
                     <div>
-                        {/* Hire me */}
-                        <Link
-                        href="/contact"
-                        className="px-5 inline-block py-2 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 text-white bg-[#5d5d5d] hover:bg-slate-800"
-                        >
-                        Let's talk 
-                        </Link>
                         {/* Download CV */}
                         <Link
-                        href="/"
-                        className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
+                        href="/resume/resume.pdf"
+                        className=" inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
                         >
                         <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
                             Download CV

@@ -3,30 +3,46 @@ import Link from "next/link";
 
 const Contact = () => {
   return (
-    <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <h1>Hit me Up!</h1>
-        <br></br>
-           {/* link button starts */}
-           <div>
-                {/* Hire me */}
-                <Link
-                href="/"
-                className="px-5 inline-block py-2 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 text-white bg-[#5d5d5d] hover:bg-slate-800"
-                >
-                Location
-                </Link>
-                {/* Download CV */}
-                <Link
-                href="/"
-                className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
-                >
-                <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
-                    Mail
-                </span>
-                </Link>
-            </div>
-            {/* link button ends */}
-    </div>
+    <section className="py-12" id="contact">
+      <div className="container mx-auto">
+        <h2 className="text-3xl font-semibold mb-6 text-center text-gray-800">
+          Contact Me
+        </h2>
+        <div className="max-w-lg mx-auto">
+          <p className="text-gray-600 text-center mb-6">
+            I'm always open to new opportunities and collaborations. Feel free to
+            get in touch with me!
+          </p>
+          <div className="flex items-center justify-center space-x-4">
+            <a
+              href="mailto:alvisccy1107@gmail.com"
+              className="text-blue-500 hover:underline"
+            >
+              Email
+            </a>
+            <span className="text-gray-400">|</span>
+            <a
+              href="https://linkedin.com/in/alvis-chong-dev"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500 hover:underline"
+            >
+              LinkedIn
+            </a>
+            <span className="text-gray-400">|</span>
+            <a
+              href="https://github.com/alvisalc"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500 hover:underline"
+            >
+              GitHub
+            </a>
+            {/* Add more social media links as needed */}
+          </div>
+        </div>
+      </div>
+    </section>
   )
 }
 
