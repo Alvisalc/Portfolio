@@ -31,7 +31,7 @@ const Navbar = () => {
           href={"/"}
           className="text-2xl md:text-5xl font-semibold"
         >
-          LOGO
+          Alvis.dev
         </Link>
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (

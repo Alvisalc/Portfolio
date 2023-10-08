@@ -29,8 +29,7 @@ const HeroSection = () => {
                     </h1>
 
                     <p className="text-base sm:text-lg mb-6 lg:text-xl">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-                        voluptatum.
+                        A passionate Front-end React Devloper based in Toronto, Canada.
                     </p>
                     
                     {/* link button starts */}
