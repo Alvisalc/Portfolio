@@ -9,7 +9,7 @@ const About = () => {
             <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
                 <h2 className="text-4xl font-bold mb-4">About Me</h2>
                     <p className="text-base lg:text-lg">
-                    Hello there! I'm a dedicated front-end web developer driven by a passion for crafting
+                    Hello there! I&apos;m a dedicated front-end web developer driven by a passion for crafting
                     engaging and user-friendly web experiences. Proficient in a wide range of skills
                     including HTML, CSS, JavaScript, React, Node.js, Express, and Git.
                     I&apos;m also a creative thinker and a team player. 
