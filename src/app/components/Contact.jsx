@@ -10,7 +10,7 @@ const Contact = () => {
         </h2>
         <div className="max-w-lg mx-auto">
           <p className="text-gray-600 text-center mb-6">
-            I'm always open to new opportunities and collaborations. Feel free to
+            I&apos;m always open to new opportunities and collaborations. Feel free to
             get in touch with me!
           </p>
           <div className="flex items-center justify-center space-x-4">
