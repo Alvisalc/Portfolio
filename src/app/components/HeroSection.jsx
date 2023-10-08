@@ -39,7 +39,7 @@ const HeroSection = () => {
                         A passionate Front-end React Devloper based in Toronto, Canada.
                     </p>
 
-                    <div className="">
+                    <div>
                     <TechStackIcons stackIcons={techStackIcons} />
                     </div>
                     
