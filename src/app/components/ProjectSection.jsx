@@ -4,11 +4,12 @@ import React, { useState, useRef } from "react";
 const projects = [
   {
     id: 1,
-    name: 'Coming Soon',
-    description: 'A description for this website.',
+    name: 'Traverse',
+    description: 'A travel search engine website is your one-stop destination for effortless trip planning. ' &&
+                  'An online platform designed to simplify your travel experience. ',
     techStack: ['React', 'SCSS'],
     previewImage: '/images/1.png',
-    githubLink: 'https://github.com/alvisalc',
+    githubLink: 'https://github.com/Alvisalc/Traverse',
     liveDemoLink: 'https://car-rental-demo.com',
   },
   {
